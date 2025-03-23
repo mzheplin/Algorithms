@@ -27,6 +27,8 @@ namespace Algorithms
 
         private void Merge(ref IList<T> collection, int p, int q, int r)
         {
+            if (collection[q].CompareTo(collection[q + 1]) < 0) return;
+
             var nL = q - p + 1;
             var nR = r - q;
 

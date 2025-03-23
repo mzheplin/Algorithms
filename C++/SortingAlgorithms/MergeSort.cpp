@@ -23,6 +23,8 @@ void merge_sort_recursive(std::vector<T>& arr, int p, int r)
 template<typename T>
 void merge(std::vector<T>& arr, int p, int q, int r)
 {
+	if (arr[q] < arr[q + 1]) return;
+
 	int nL = q - p + 1;
 	int nR = r - q;
 
