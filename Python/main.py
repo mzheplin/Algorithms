@@ -1,7 +1,7 @@
-import merge_sort
+from Divide_Conquer import h_index
 
-arr = [4, 3, 2, 1,6,5]
+arr = [41, 4, 21, 11,6,5]
 
-merge_sort.merge_sort(arr)
+idx = h_index.find_h_index(arr)
 
-print(arr)
+print(idx)

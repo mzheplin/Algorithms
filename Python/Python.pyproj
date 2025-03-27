@@ -4,8 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>75b4d3b3-238d-4dec-aa13-4369779c2ebd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,12 +21,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Divide_Conquer\h_index.py" />
     <Compile Include="main.py" />
     <Compile Include="SortingAlgorithms\insert_sort.py" />
     <Compile Include="SortingAlgorithms\merge_sort.py" />
     <Compile Include="SortingAlgorithms\select_sort.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Divide_Conquer\" />
     <Folder Include="SortingAlgorithms\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

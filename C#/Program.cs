@@ -1,19 +1,31 @@
-﻿using Algorithms;
+﻿using SortingAlgorithms;
+using C_Sharp.Divide_Conquer;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 
 
-// Measure execution time for MergeSorter
-var timeMergeSort = MeasureExecutionTime(new MergeSorter<int>());
-Console.WriteLine($"MergeSort execution time: {timeMergeSort} ms");
+IList<int> originalList = new List<int>();
+var random = new Random();
+for (int i = 0; i < 20000; i++)
+{
+    originalList.Add(Math.Max(200000 - i, 1));
+}
+var sorted = originalList.OrderByDescending(x => x).ToList();
 
-// Measure execution time for SelectionSorter
-var timeSelectionSort = MeasureExecutionTime(new SelectionSorter<int>());
-Console.WriteLine($"SelectionSort execution time: {timeSelectionSort} ms");
+/*foreach (int i in sorted)
+{
+    Console.Write(i);
+    Console.Write('\t');
+}*/
 
-// Measure execution time for InsertSorter
-var timeInsertSort = MeasureExecutionTime(new SelectionSorter<int>());
-Console.WriteLine($"InsertSort execution time: {timeInsertSort} ms");
+
+Stopwatch stopwatch1 = new Stopwatch();
+stopwatch1.Start();
+int hIdx1 = Algorithms.FindHIndex(sorted);
+stopwatch1.Stop();
+
+Console.WriteLine(hIdx1);
 
 
 // Helper method to measure execution time of a Sorter

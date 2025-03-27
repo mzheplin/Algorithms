@@ -1,15 +1,13 @@
 #include <iostream>
 #include <vector>
-#include "SortingAlgorithms/SelectSort.h"
+#include "SortingAlgorithms/MergeSortDescending.h"
+#include "Divide&Conquer/HIndex.h"
 
 int main()
 {
-    std::vector<int>  arr = { 2,7,-1,9, -8 };
+    std::vector<int>  arr = { 2,7,1,9,4, 8 };
 
-    select_sort(arr);
+    int hIdx = hIndex(arr);
 
-    for (int i = 0; i < 5; i++) {
-        std::cout << arr[i] << "\n";
-    }
-
+    std::cout << hIdx << "\n";
 }

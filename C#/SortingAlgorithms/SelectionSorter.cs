@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms
+namespace SortingAlgorithms
 {
     class SelectionSorter<T> : ISorter<T> where T : IComparable<T>
     {

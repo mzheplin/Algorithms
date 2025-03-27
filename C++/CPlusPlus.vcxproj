@@ -127,14 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Divide&amp;Conquer\HIndex.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SortingAlgorithms\InsertSort.cpp" />
     <ClCompile Include="SortingAlgorithms\MergeSort.cpp" />
+    <ClCompile Include="SortingAlgorithms\MergeSortDescending.cpp" />
     <ClCompile Include="SortingAlgorithms\SelectSort.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Divide&amp;Conquer\HIndex.h" />
     <ClInclude Include="SortingAlgorithms\InsertSort.h" />
     <ClInclude Include="SortingAlgorithms\MergeSort.h" />
+    <ClInclude Include="SortingAlgorithms\MergeSortDescending.h" />
     <ClInclude Include="SortingAlgorithms\SelectSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
