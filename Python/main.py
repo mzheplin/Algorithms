@@ -1,7 +1,9 @@
-from Divide_Conquer import h_index
+from DynamicProgramming import functions_on_array
 
-arr = [41, 4, 21, 11,6,5]
+arr = [-1,41, 7, -21, 111,-6,4]
+print(arr)
 
-idx = h_index.find_h_index(arr)
+subArr, maxSum = functions_on_array.sum_of_max_subarray(arr)
 
-print(idx)
+print(subArr)
+print(maxSum)

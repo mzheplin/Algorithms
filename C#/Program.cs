@@ -7,26 +7,28 @@ using System.Collections.Generic;
 
 IList<int> originalList = new List<int>();
 var random = new Random();
-for (int i = 0; i < 20000; i++)
+for (int i = 0; i < 10; i++)
 {
-    originalList.Add(Math.Max(200000 - i, 1));
+    originalList.Add(random.Next(-5,5));
 }
-var sorted = originalList.OrderByDescending(x => x).ToList();
 
-/*foreach (int i in sorted)
+foreach (int i in originalList)
 {
     Console.Write(i);
     Console.Write('\t');
-}*/
+}
+Console.WriteLine( );
 
+var res = C_Sharp.DynamicProgramming.Solver.MaxSum(originalList);
 
-Stopwatch stopwatch1 = new Stopwatch();
-stopwatch1.Start();
-int hIdx1 = Algorithms.FindHIndex(sorted);
-stopwatch1.Stop();
+foreach (int i in res.Item1)
+{
+    Console.Write(i);
+    Console.Write('\t');
+}
 
-Console.WriteLine(hIdx1);
-
+Console.WriteLine();
+Console.WriteLine(res.Item2);
 
 // Helper method to measure execution time of a Sorter
 static long MeasureExecutionTime(ISorter<int> sorter)

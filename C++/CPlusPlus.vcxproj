@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Divide&amp;Conquer\HIndex.cpp" />
+    <ClCompile Include="DynamicProgramming\ArrayFunctions.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SortingAlgorithms\InsertSort.cpp" />
     <ClCompile Include="SortingAlgorithms\MergeSort.cpp" />
@@ -136,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Divide&amp;Conquer\HIndex.h" />
+    <ClInclude Include="DynamicProgramming\ArrayFunctions.h" />
     <ClInclude Include="SortingAlgorithms\InsertSort.h" />
     <ClInclude Include="SortingAlgorithms\MergeSort.h" />
     <ClInclude Include="SortingAlgorithms\MergeSortDescending.h" />
