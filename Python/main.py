@@ -1,9 +1,8 @@
-from DynamicProgramming import functions_on_array
+from SortingAlgorithms import counting_sort
 
-arr = [-1,41, 7, -21, 111,-6,4]
+arr = [1,3,4,1,3,1,4,1,2,3,5,3]
 print(arr)
 
-subArr, maxSum = functions_on_array.sum_of_max_subarray(arr)
+res = counting_sort.counting_sort(arr)
 
-print(subArr)
-print(maxSum)
+print(res)

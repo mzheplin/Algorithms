@@ -1,15 +1,17 @@
 #include <iostream>
 #include <utility>
 #include <vector>
-#include "SortingAlgorithms/MergeSortDescending.h"
-#include "Divide&Conquer/HIndex.h"
-#include "DynamicProgramming/ArrayFunctions.h"
+#include "SortingAlgorithms/CountingSort.h"
+
 
 int main()
 {
-    std::vector<int>  arr = { 2,-7,1,9,4, 8 };
+    std::vector<unsigned int>  arr = { 2,0,1,4,4, 2 };
 
-    auto res = sumOfMaxSubarray(arr);
+    auto res = counting_sort(arr);
 
-    std::cout << res.second << "\n";
+    for (int num : res) {
+
+        std::cout << num << "\n";
+    }
 }
